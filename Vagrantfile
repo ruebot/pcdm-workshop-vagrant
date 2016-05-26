@@ -54,11 +54,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   home_dir = "/home/vagrant"
   config.vm.synced_folder ".", home_dir + "/pcdm-workshop/install"
 
+  config.vm.network :forwarded_port, guest: 3000, host: 3000 # Rails
+  config.vm.network :forwarded_port, guest: 3306, host: 3306 # MySQL
+  config.vm.network :forwarded_port, guest: 5432, host: 5432 # PostgreSQL
   config.vm.network :forwarded_port, guest: 8080, host: 8080 # Tomcat
   config.vm.network :forwarded_port, guest: 8181, host: 8181 # Karaf
   config.vm.network :forwarded_port, guest: 8282, host: 8282 # Islandora Microservices
-  config.vm.network :forwarded_port, guest: 3306, host: 3306 # MySQL
-  config.vm.network :forwarded_port, guest: 5432, host: 5432 # PostgreSQL
+  config.vm.network :forwarded_port, guest: 8983, host: 8983 # Solr 6
 
   config.vm.provider "virtualbox" do |vb|
     vb.customize ["modifyvm", :id, "--memory", $memory]
@@ -81,4 +83,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :shell, :path => "./scripts/post-install.sh", :args => home_dir
   config.vm.provision :shell, :path => "./scripts/islandora-microservices.sh", :args => home_dir
   config.vm.provision :shell, :path => "./scripts/ruby.sh"
+  config.vm.provision :shell, :path => "./scripts/fits.sh", args: home_dir
+  config.vm.provision :shell, :path => "./scripts/ccdemo.sh", privileged: false
 end
