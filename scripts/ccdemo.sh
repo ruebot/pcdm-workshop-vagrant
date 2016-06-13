@@ -2,7 +2,7 @@
 
 rails new ccdemo --skip-spring
 cd ccdemo
-echo "gem 'curation_concerns', github:'projecthydra-labs/curation_concerns', branch: 'master'" >> Gemfile
+echo "gem 'curation_concerns', git:'https://github.com/projecthydra/curation_concerns.git', branch: 'master'" >> Gemfile
 bundle install
 yes Y | rails generate curation_concerns:install
 rake db:migrate
