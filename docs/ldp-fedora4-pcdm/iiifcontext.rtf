@@ -1,0 +1,625 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Bold;}
+{\colortbl;\red255\green255\blue255;\red15\green112\blue3;\red247\green247\blue247;\red19\green8\blue105;
+\red0\green0\blue255;\red83\green83\blue83;\red106\green128\blue31;\red169\green14\blue26;}
+\margl1440\margr1440\vieww9320\viewh22040\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+\{\
+  "@context": \{\
+    "sc": "http://iiif.io/api/presentation/2#",\
+    "iiif": "http://iiif.io/api/image/2#",\
+    "exif": "http://www.w3.org/2003/12/exif/ns#",\
+    "oa": "http://www.w3.org/ns/oa#",\
+    "cnt": "http://www.w3.org/2011/content#",\
+    "dc": "http://purl.org/dc/elements/1.1/",\
+    "dcterms": "http://purl.org/dc/terms/",\
+    "dctypes": "http://purl.org/dc/dcmitype/",\
+    "foaf": "http://xmlns.com/foaf/0.1/",\
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",\
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",\
+    "xsd": "http://www.w3.org/2001/XMLSchema#",\
+    "svcs": "http://rdfs.org/sioc/services#",\
+    "as": "http://www.w3.org/ns/activitystreams#",\
+    "license": \{\
+      "@type": "@id",\
+      "@id": "dcterms:rights"\
+    \},\
+    "service": \{\
+      "@type": "@id",\
+      "@id": "svcs:has_service"\
+    \},\
+    "seeAlso": \{\
+      "@type": "@id",\
+      "@id": "rdfs:seeAlso"\
+    \},\
+    "within": \{\
+      "@type": "@id",\
+      "@id": "dcterms:isPartOf"\
+    \},\
+    "profile": \{\
+      "@type": "@id",\
+      "@id": "dcterms:conformsTo"\
+    \},\
+    "related": \{\
+      "@type": "@id",\
+      "@id": "dcterms:relation"\
+    \},\
+    "logo": \{\
+      "@type": "@id",\
+      "@id": "foaf:logo"\
+    \},\
+    "thumbnail": \{\
+      "@type": "@id",\
+      "@id": "foaf:thumbnail"\
+    \},\
+    "startCanvas": \{\
+      "@type": "@id",\
+      "@id": "sc:hasStartCanvas"\
+    \},\
+    "contentLayer": \{\
+      "@type": "@id",\
+      "@id": "sc:hasContentLayer"\
+    \},\
+    "collections": \{\
+      "@type": "@id",\
+      "@id": "sc:hasCollections",\
+      "@container": "@list"\
+    \},\
+    "manifests": \{\
+      "@type": "@id",\
+      "@id": "sc:hasManifests",\
+      "@container": "@list"\
+    \},\
+    "sequences": \{\
+      "@type": "@id",\
+      "@id": "sc:hasSequences",\
+      "@container": "@list"\
+    \},\
+    "canvases": \{\
+      "@type": "@id",\
+      "@id": "sc:hasCanvases",\
+      "@container": "@list"\
+    \},\
+    "resources": \{\
+      "@type": "@id",\
+      "@id": "sc:hasAnnotations",\
+      "@container": "@list"\
+    \},\
+    "images": \{\
+      "@type": "@id",\
+      "@id": "sc:hasImageAnnotations",\
+      "@container": "@list"\
+    \},\
+    "otherContent": \{\
+      "@type": "@id",\
+      "@id": "sc:hasLists",\
+      "@container": "@list"\
+    \},\
+    "structures": \{\
+      "@type": "@id",\
+      "@id": "sc:hasRanges",\
+      "@container": "@list"\
+    \},\
+    "ranges": \{\
+      "@type": "@id",\
+      "@id": "sc:hasRanges",\
+      "@container": "@list"\
+    \},\
+    "metadata": \{\
+      "@type": "@id",\
+      "@id": "sc:metadataLabels",\
+      "@container": "@list"\
+    \},\
+    "description": \{\
+      "@id": "dc:description"\
+    \},\
+    "navDate": \{\
+      "@id": "sc:presentationDate"\
+    \},\
+    "rendering": \{\
+      "@id": "dcterms:hasFormat",\
+      "@type": "@id"\
+    \},\
+    "height": \{\
+      "@type": "xsd:integer",\
+      "@id": "exif:height"\
+    \},\
+    "width": \{\
+      "@type": "xsd:integer",\
+      "@id": "exif:width"\
+    \},\
+    "attribution": \{\
+      "@id": "sc:attributionLabel"\
+    \},\
+    "viewingDirection": \{\
+      "@id": "sc:viewingDirection",\
+      "@type": "@vocab"\
+    \},\
+    "viewingHint": \{\
+      "@id": "sc:viewingHint",\
+      "@type": "@vocab"\
+    \},\
+    "left-to-right": \{\
+      "@id": "sc:leftToRightDirection",\
+      "@type": "sc:ViewingDirection"\
+    \},\
+    "right-to-left": \{\
+      "@id": "sc:rightToLeftDirection",\
+      "@type": "sc:ViewingDirection"\
+    \},\
+    "top-to-bottom": \{\
+      "@id": "sc:topToBottomDirection",\
+      "@type": "sc:ViewingDirection"\
+    \},\
+    "bottom-to-top": \{\
+      "@id": "sc:bottomToTopDirection",\
+      "@type": "sc:ViewingDirection"\
+    \},\
+    "paged": \{\
+      "@id": "sc:pagedHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "non-paged": \{\
+      "@id": "sc:nonPagedHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "continuous": \{\
+      "@id": "sc:continuousHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "individuals": \{\
+      "@id": "sc:individualsHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "top": \{\
+      "@id": "sc:topHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "multi-part": \{\
+      "@id": "sc:multiPartHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "facing-pages": \{\
+      "@id": "sc:facingPagesHint",\
+      "@type": "sc:ViewingHint"\
+    \},\
+    "motivation": \{\
+      "@type": "@id",\
+      "@id": "oa:motivatedBy"\
+    \},\
+    "resource": \{\
+      "@type": "@id",\
+      "@id": "oa:hasBody"\
+    \},\
+    "on": \{\
+      "@type": "@id",\
+      "@id": "oa:hasTarget"\
+    \},\
+    "full": \{\
+      "@type": "@id",\
+      "@id": "oa:hasSource"\
+    \},\
+    "selector": \{\
+      "@type": "@id",\
+      "@id": "oa:hasSelector"\
+    \},\
+    "stylesheet": \{\
+      "@type": "@id",\
+      "@id": "oa:styledBy"\
+    \},\
+    "style": \{\
+      "@id": "oa:styleClass"\
+    \},\
+    "default": \{\
+      "@type": "@id",\
+      "@id": "oa:default"\
+    \},\
+    "item": \{\
+      "@type": "@id",\
+      "@id": "oa:item"\
+    \},\
+    "chars": \{\
+      "@id": "cnt:chars"\
+    \},\
+    "encoding": \{\
+      "@id": "cnt:characterEncoding"\
+    \},\
+    "bytes": \{\
+      "@id": "cnt:bytes"\
+    \},\
+    "format": \{\
+      "@id": "dc:format"\
+    \},\
+    "language": \{\
+      "@id": "dc:language"\
+    \},\
+    "value": \{\
+      "@id": "rdf:value"\
+    \},\
+    "label": \{\
+      "@id": "rdfs:label"\
+    \},\
+    "first": \{\
+      "@type": "@id",\
+      "@id": "as:first"\
+    \},\
+    "last": \{\
+      "@type": "@id",\
+      "@id": "as:last"\
+    \},\
+    "next": \{\
+      "@type": "@id",\
+      "@id": "as:next"\
+    \},\
+    "prev": \{\
+      "@type": "@id",\
+      "@id": "as:prev"\
+    \},\
+    "total": \{\
+      "@id": "as:totalItems"\
+    \},\
+    "startIndex": \{\
+      "@id": "as:startIndex"\
+    \}\
+  \},\
+  "@id": "http://www.example.org/iiif/book1/manifest",\
+  "@type": "sc:Manifest",\
+  "attribution": "Provided by Example Organization",\
+  "sequences": [\
+    \{\
+      "@id": "http://www.example.org/iiif/book1/sequence/normal",\
+      "@type": "sc:Sequence",\
+      "label": "Current Page Order"\
+    \}\
+  ],\
+  "metadata": [\
+    \{\
+      "value": "Anne Author",\
+      "label": "Author"\
+    \},\
+    \{\
+      "value": [\
+        \{\
+          "@language": "en",\
+          "@value": "Paris, circa 1400"\
+        \},\
+        \{\
+          "@language": "fr",\
+          "@value": "Paris, environ 1400"\
+        \}\
+      ],\
+      "label": "Published"\
+    \},\
+    \{\
+      "value": "Some Collection",\
+      "label": "Source"\
+    \}\
+  ],\
+  "viewingDirection": "sc:rightToLeftDirection",\
+  "viewingHint": "sc:pagedHint",\
+  "description": "A longer description of this example book. It should give some real information.",\
+  "within": "http://www.example.org/collections/books/",\
+  "related": \{\
+    "@id": "http://www.example.org/videos/video-book1.mpg",\
+    "format": "video/mpeg"\
+  \},\
+  "license": "http://www.example.org/license.html",\
+  "service": \{\
+    "@id": "http://example.org/service/example",\
+    "profile": "http://example.org/docs/example-service.html"\
+  \},\
+  "label": "Book 1",\
+  "seeAlso": "http://www.example.org/library/catalog/book1.xml",\
+  "logo": "http://www.example.org/logos/institution1.jpg",\
+  "thumbnail": \{\
+    "@id": "http://www.example.org/images/book1-page1/full/80,100/0/default.jpg",\
+    "service": \{\
+      "@id": "http://www.example.org/images/book1-page1",\
+      "profile": "http://iiif.io/api/image/2/level1.json"\
+    \}\
+  \}\
+\}\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\pard\pardeftab720\qj
+
+\f1\b\fs24 \cf2 \cb3 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+as: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/ns/activitystreams#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+cnt: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/2011/content#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+dc: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://purl.org/dc/elements/1.1/> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+dcmit: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://purl.org/dc/dcmitype/> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+dcterms: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://purl.org/dc/terms/> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+dctypes: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://purl.org/dc/dcmitype/> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+exif: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/2003/12/exif/ns#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+foaf: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://xmlns.com/foaf/0.1/> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+iiif: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://iiif.io/api/image/2#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+oa: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/ns/oa#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+rdf: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+rdfs: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/2000/01/rdf-schema#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+sc: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://iiif.io/api/presentation/2#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+siocserv: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://rdfs.org/sioc/services#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+svcs: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://rdfs.org/sioc/services#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+xml: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/XML/1998/namespace> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+
+\f1\b \cf2 \expnd0\expndtw0\kerning0
+@prefix 
+\f0\b0 \cf4 \expnd0\expndtw0\kerning0
+xsd: 
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.w3.org/2001/XMLSchema#> .
+\f0\b0 \cf0 \expnd0\expndtw0\kerning0
+\
+\
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.example.org/iiif/book1/manifest>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ a \cf7 \expnd0\expndtw0\kerning0
+sc:Manifest \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+rdfs:label \cf8 \expnd0\expndtw0\kerning0
+"Book 1" \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+sc:attributionLabel \cf8 \expnd0\expndtw0\kerning0
+"Provided by Example Organization" \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+sc:hasSequences \cf0 \expnd0\expndtw0\kerning0
+(\cf7 \expnd0\expndtw0\kerning0
+ <http://www.example.org/iiif/book1/sequence/normal>\cf0 \expnd0\expndtw0\kerning0
+ ) ;\
+    \cf6 \expnd0\expndtw0\kerning0
+sc:metadataLabels \cf0 \expnd0\expndtw0\kerning0
+( [\cf6 \expnd0\expndtw0\kerning0
+ rdfs:label \cf8 \expnd0\expndtw0\kerning0
+"Author" \cf0 \expnd0\expndtw0\kerning0
+;\
+                \cf6 \expnd0\expndtw0\kerning0
+rdf:value \cf8 \expnd0\expndtw0\kerning0
+"Anne Author" \cf0 \expnd0\expndtw0\kerning0
+] [\cf6 \expnd0\expndtw0\kerning0
+ rdfs:label \cf8 \expnd0\expndtw0\kerning0
+"Published" \cf0 \expnd0\expndtw0\kerning0
+;\
+                \cf6 \expnd0\expndtw0\kerning0
+rdf:value \cf8 \expnd0\expndtw0\kerning0
+"Paris, circa 1400"\cf0 \expnd0\expndtw0\kerning0
+@\cf7 \expnd0\expndtw0\kerning0
+en\cf0 \expnd0\expndtw0\kerning0
+,\
+\pard\pardeftab720\qj
+\cf8 \expnd0\expndtw0\kerning0
+                    "Paris, environ 1400"\cf0 \expnd0\expndtw0\kerning0
+@\cf7 \expnd0\expndtw0\kerning0
+fr \cf0 \expnd0\expndtw0\kerning0
+] [\cf6 \expnd0\expndtw0\kerning0
+ rdfs:label \cf8 \expnd0\expndtw0\kerning0
+"Source" \cf0 \expnd0\expndtw0\kerning0
+;\
+                \cf6 \expnd0\expndtw0\kerning0
+rdf:value \cf8 \expnd0\expndtw0\kerning0
+"Some Collection" \cf0 \expnd0\expndtw0\kerning0
+] ) ;\
+    \cf6 \expnd0\expndtw0\kerning0
+sc:viewingDirection \cf7 \expnd0\expndtw0\kerning0
+sc:rightToLeftDirection \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+sc:viewingHint \cf7 \expnd0\expndtw0\kerning0
+sc:pagedHint \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+dc:description \cf8 \expnd0\expndtw0\kerning0
+"A longer description of this example book. It should give some real information." \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+dcterms:isPartOf \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/collections/books/>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+dcterms:relation \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/videos/video-book1.mpg>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+dcterms:rights \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/license.html>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+svcs:has_service \cf7 \expnd0\expndtw0\kerning0
+<http://example.org/service/example>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+rdfs:seeAlso \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/library/catalog/book1.xml>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+foaf:logo \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/logos/institution1.jpg>\cf0 \expnd0\expndtw0\kerning0
+ ;\
+    \cf6 \expnd0\expndtw0\kerning0
+foaf:thumbnail \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/images/book1-page1/full/80,100/0/default.jpg>\cf0 \expnd0\expndtw0\kerning0
+ .\
+\
+\pard\pardeftab720\qj
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://example.org/service/example>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ dcterms:conformsTo \cf7 \expnd0\expndtw0\kerning0
+<http://example.org/docs/example-service.html>\cf0 \expnd0\expndtw0\kerning0
+ .\
+\
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.example.org/iiif/book1/sequence/normal>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ a \cf7 \expnd0\expndtw0\kerning0
+sc:Sequence \cf0 \expnd0\expndtw0\kerning0
+;\
+    \cf6 \expnd0\expndtw0\kerning0
+rdfs:label \cf8 \expnd0\expndtw0\kerning0
+"Current Page Order" \cf0 \expnd0\expndtw0\kerning0
+.\
+\
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.example.org/images/book1-page1>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ dcterms:conformsTo \cf7 \expnd0\expndtw0\kerning0
+<http://iiif.io/api/image/2/level1.json>\cf0 \expnd0\expndtw0\kerning0
+ .\
+\
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.example.org/images/book1-page1/full/80,100/0/default.jpg>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ svcs:has_service \cf7 \expnd0\expndtw0\kerning0
+<http://www.example.org/images/book1-page1>\cf0 \expnd0\expndtw0\kerning0
+ .\
+\
+
+\f1\b \cf5 \expnd0\expndtw0\kerning0
+<http://www.example.org/videos/video-book1.mpg>
+\f0\b0 \cf6 \expnd0\expndtw0\kerning0
+ dc:format \cf8 \expnd0\expndtw0\kerning0
+"video/mpeg" \cf0 \expnd0\expndtw0\kerning0
+.}

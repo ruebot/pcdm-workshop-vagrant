@@ -1,0 +1,33 @@
+//Books base container
+curl -i -XPOST -H"Slug: books" -H "Content-type:text/turtle" http://localhost:8080/fcrepo/rest
+
+//Our main book
+curl -i -XPUT -H "Content-type:text/turtle" --data-binary @books-book1_f4_put.ttl http://localhost:8080/fcrepo/rest/books/book1
+
+//Our pages directcontainer
+curl -i -XPOST -H "Content-type:text/turtle" -H"Slug: pages" --data-binary @books-book1-pages_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1
+
+//Our ranges directcontainer
+curl -i -XPOST -H "Content-type:text/turtle" -H"Slug: ranges" --data-binary @books-book1-ranges_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1
+
+//Our sequences directcontainer
+curl -i -XPOST -H "Content-type:text/turtle" -H"Slug: sequences" --data-binary @books-book1-sequences_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1
+
+//Our First page
+curl -i -XPOST -H "Content-type:text/turtle" -H"Slug: page1" --data-binary @books-book1-pages-page1_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1/pages
+
+//Files directcontainer page 1
+curl -i -XPUT -H "Content-type:text/turtle" --data-binary @books-book1-pages-page1-files_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1/pages/page1/files
+
+//Annotations container for page 1
+curl -i -XPOST -H "Content-type:text/turtle" -H"Slug: anno" --data-binary @books-book1-pages-page1-anno_f4_post.ttl http://localhost:8080/fcrepo/rest/books/book1/pages/page1
+
+//Now put some binaries for this page (this will upload images, metadata has to be updated using sparql-update to /fcr:metadata virtual container)
+
+curl -i -XPUT -H "Content-type: image/jp2" --data-binary @page1.jp2 http://localhost:8080/fcrepo/rest/books/book1/pages/page1/files/.JP2
+
+curl -i -XPUT -H "Content-type: image/jpeg" --data-binary @page1.jpg http://localhost:8080/fcrepo/rest/books/book1/pages/page1/files/.JPG
+
+//With Binaries present, we can now create an IIIF annotation
+curl -i -XPUT -H "Content-type:text/turtle" --data-binary @books-book1-pages-page1-anno-anno1_f4_put.ttl
+http://localhost:8080/fcrepo/rest/books/book1/pages/page1/anno/anno1

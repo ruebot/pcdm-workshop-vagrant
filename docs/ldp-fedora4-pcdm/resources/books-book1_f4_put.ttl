@@ -1,0 +1,6 @@
+@prefix pcdm: <http://pcdm.org/models#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <http://iiif.io/api/presentation/2#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<> a ldp:Container ,pcdm:Object, sc:Manifest .

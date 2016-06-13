@@ -1,0 +1,8 @@
+@prefix sc: <http://iiif.io/api/presentation/2#> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> a sc:Sequence ;
+sc:pagedHint "paged"^^<http://www.w3.org/2001/XMLSchema#string> ;
+rdfs:comment "This where IIIF fails for PCDM and LDP. According to specs this sequence should be a rdf:list. But the proxy behaviour is better for RDF since @list != rdf:list"^^<http://www.w3.org/2001/XMLSchema#string> ;
+sc:rightToLeftDirection "left-to-right"^^<http://www.w3.org/2001/XMLSchema#string> .

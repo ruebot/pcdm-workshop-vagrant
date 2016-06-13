@@ -1,0 +1,13 @@
+@prefix pcdm: <http://pcdm.org/models#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sc: <http://iiif.io/api/presentation/2#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix xs: <http://www.w3.org/2001/XMLSchema> .
+@prefix exif: <http://www.w3.org/2003/12/exif/ns#> .
+
+<> a sc:Canvas, pcdm:Object; 
+rdfs:label "Page 1"^^<http://www.w3.org/2001/XMLSchema#string> ;
+exif:height "1754"^^<http://www.w3.org/2001/XMLSchemaint> ;
+exif:width "1239"^^<http://www.w3.org/2001/XMLSchemaint> .
